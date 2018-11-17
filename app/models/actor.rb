@@ -9,6 +9,6 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.characters
-    binding.pry 
+    binding.pry
   end
 end
