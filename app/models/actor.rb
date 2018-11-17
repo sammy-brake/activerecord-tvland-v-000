@@ -4,10 +4,11 @@ class Actor < ActiveRecord::Base
 
   def full_name
     return "#{self.first_name} #{self.last_name}"
-
   end
 
   def list_roles
-    self.characters
+    self.characters.each do |character|
+      return "#{character.name} - #{character.show}
+    end 
   end
 end
